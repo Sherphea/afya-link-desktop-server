@@ -17,7 +17,7 @@ class CreateMedicationsTable extends Migration
             $table->bigIncrements('id');
 
             $table->string('inventory_items');
-            $table->sting('prescription');
+            $table->string('prescription');
             $table->integer('quantiy_requested');
 
             $table->integer('patient_id');

@@ -5,10 +5,8 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-Class Patient extends Model{
-
+class Visit extends Model
+{
     use SoftDeletes;
-
     
-
 }

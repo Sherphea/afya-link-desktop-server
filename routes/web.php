@@ -81,4 +81,5 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->delete('visit/{visitId}', ['uses' => 'VisitController@deleteVisit']);
 
     $router->get('inventories', ['uses' => 'InventoryController@getAllInventories']);
+    $router->get('invoiceItems', ['uses' => 'InvoiceItemController@getInvoiceItems']);
 });

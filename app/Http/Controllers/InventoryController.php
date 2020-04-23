@@ -11,9 +11,9 @@ class InventoryController extends Controller
     public function getAllInventories()
     {
 
-        $inventorys = Inventory::all();
+        $inventories = Inventory::all();
 
-        return response()->json(['inventories' => $inventorys], 200);
+        return response()->json(['inventories' => $inventories], 200);
     }
 
     public function getInventory($inventoryID)
@@ -29,7 +29,7 @@ class InventoryController extends Controller
     {
 
         $validator = Validator::make($request->all(), [
-            'name' => 'required|unique:inventorys',
+            'name' => 'required',
             'type' => 'required',
             'quantity' => 'required',
             'location' => 'required',

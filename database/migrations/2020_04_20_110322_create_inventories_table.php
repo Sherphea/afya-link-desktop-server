@@ -20,10 +20,15 @@ class CreateInventoriesTable extends Migration
             $table->string('type');
             $table->integer('quantity');
             $table->string('location');
+            $table->string('aisle_location');
             $table->string('x_ref');
             $table->date('request_on');
+            $table->date('date_received');
+            $table->string('vendor');
+            $table->string('invoice_number');
             $table->string('requested_by');
-
+            $table->boolean('gift_in_kind');
+            
             $table->softDeletes();
             $table->timestamps();
         });

@@ -21,4 +21,9 @@ class Inventory extends Model
     ];
 
     protected $dates = ['deleted_at'];
+
+    public function invoiceItem()
+    {
+        return $this->hasOne(InvoiceItem::class);
+    }
 }

@@ -13,46 +13,65 @@ class InventoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        $patient = new Inventory();
-        $patient->name = "Linment";
-        $patient->quantity = 50;
-        $patient->request_on = Carbon::now();
-        $patient->requested_by = 'Henry Lyamuya';
-        $patient->save();
+        $inventory = new Inventory();
+        $inventory->name = "Linment";
+        $inventory->type = "Medicine";
+        $inventory->location = "Lab";
+        $inventory->x_ref = "x_ref";
+        $inventory->quantity = 50;
+        $inventory->request_on = Carbon::now();
+        $inventory->requested_by = 'Henry Lyamuya';
 
-        $patient = new Inventory();
-        $patient->name = "Cotton";
-        $patient->quantity = 50;
-        $patient->request_on = Carbon::now();
-        $patient->requested_by = 'Matias Mhando';
-        $patient->save();
+        $inventory->save();
 
-        $patient = new Inventory();
-        $patient->name = "Iodine";
-        $patient->quantity = 50;
-        $patient->request_on = Carbon::now();
-        $patient->requested_by = 'Gordon Nchy';
-        $patient->save();
+        $inventory = new Inventory();
+        $inventory->name = "Cotton";
+        $inventory->type = "Medicine";
+        $inventory->location = "Lab";
+        $inventory->x_ref = "x_ref";
+        $inventory->quantity = 50;
+        $inventory->request_on = Carbon::now();
+        $inventory->requested_by = 'Matias Mhando';
+        $inventory->save();
 
-        $patient = new Inventory();
-        $patient->name = "Pain Killers";
-        $patient->quantity = 50;
-        $patient->request_on = Carbon::now();
-        $patient->requested_by = 'Micheal Mzanda';
-        $patient->save();
+        $inventory = new Inventory();
+        $inventory->name = "Iodine";
+        $inventory->type = "Medicine";
+        $inventory->location = "Lab";
+        $inventory->x_ref = "x_ref";
+        $inventory->quantity = 50;
+        $inventory->request_on = Carbon::now();
+        $inventory->requested_by = 'Gordon Nchy';
+        $inventory->save();
 
-        $patient = new Inventory();
-        $patient->name = "Sissors";
-        $patient->quantity = 50;
-        $patient->request_on = Carbon::now();
-        $patient->requested_by = 'Dela Dela';
-        $patient->save();
+        $inventory = new Inventory();
+        $inventory->name = "Pain Killers";
+        $inventory->type = "Medicine";
+        $inventory->location = "Lab";
+        $inventory->x_ref = "x_ref";
+        $inventory->quantity = 50;
+        $inventory->request_on = Carbon::now();
+        $inventory->requested_by = 'Micheal Mzanda';
+        $inventory->save();
 
-        $patient = new Inventory();
-        $patient->name = "syringes";
-        $patient->quantity = 50;
-        $patient->request_on = Carbon::now();
-        $patient->requested_by = 'Hawa Ally';
-        $patient->save();
+        $inventory = new Inventory();
+        $inventory->name = "Sissors";
+        $inventory->type = "Medicine";
+        $inventory->location = "Lab";
+        $inventory->x_ref = "x_ref";
+        $inventory->quantity = 50;
+        $inventory->request_on = Carbon::now();
+        $inventory->requested_by = 'Dela Dela';
+        $inventory->save();
+
+        $inventory = new Inventory();
+        $inventory->name = "syringes";
+        $inventory->type = "Medicine";
+        $inventory->location = "Lab";
+        $inventory->x_ref = "x_ref";
+        $inventory->quantity = 50;
+        $inventory->request_on = Carbon::now();
+        $inventory->requested_by = 'Hawa Ally';
+        $inventory->save();
     }
 }

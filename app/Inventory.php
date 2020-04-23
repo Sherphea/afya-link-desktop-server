@@ -12,7 +12,10 @@ class Inventory extends Model
 
     protected $fillable = [
         'name',
+        'type',
         'quantity',
+        'location',
+        'x_ref',
         'request_on',
         'requested_by'
     ];

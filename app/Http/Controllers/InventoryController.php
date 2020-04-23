@@ -30,7 +30,10 @@ class InventoryController extends Controller
 
         $validator = Validator::make($request->all(), [
             'name' => 'required|unique:inventorys',
+            'type' => 'required',
             'quantity' => 'required',
+            'location' => 'required',
+            'x_ref' => 'required',
             'request_on' => 'required',
             'requested_by' => 'required',
         ]);
@@ -44,7 +47,10 @@ class InventoryController extends Controller
         $inventory = new Inventory();
 
         $inventory->name = $request->input('name');
+        $inventory->type = $request->input('type');
         $inventory->quantity = $request->input('quantity');
+        $inventory->location = $request->input('location');
+        $inventory->x_ref = $request->input('x_ref');
         $inventory->request_on = $request->input('request_on');
         $inventory->requested_by = $request->input('requested_by');
 
@@ -61,7 +67,10 @@ class InventoryController extends Controller
 
         $inventory->update([
             'name' => $request->input('name'),
+            'type' => $request->input('type'),
             'quantity' => $request->input('quantity'),
+            'location' => $request->input('location'),
+            'x_ref' => $request->input('x_ref'),
             'request_on' => $request->input('request_on'),
             'requested_by' => $request->input('requested_by')
         ]);
